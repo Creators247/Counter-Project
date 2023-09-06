@@ -28,14 +28,18 @@ function App() {
 
   return (
     <>
+    <section>
        <p>Current Value</p>
       <h1>{count}</h1>
+      <div>
       <button onClick={plusOne}><Icon.ArrowUp/></button>
       <button onClick={plusTen}><Icon.ArrowUp/> <Icon.ArrowUp/></button>
       <button onClick={reset}><Icon.RotateCcw/></button>
       <button className = "random" onClick={random}>#</button>
       <button onClick= {minusTen}><Icon.ArrowDown/> <Icon.ArrowDown/></button>
       <button onClick = {minusOne}><Icon.ArrowDown/></button>
+      </div>
+    </section>  
     </>
   )
 }
